@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 def enviar_mensagem(contato, mensagem, primeira_vez):
-    tempo_espera = 40 if primeira_vez == "sim" else 10
+    tempo_espera = 40 if primeira_vez == "sim" else 10 # <---- editar aqui caso necessário
 
     options = Options()
     options.add_argument(r"--user-data-dir=C:\CAMINHO\DO\SEU\PERFIL") # <----- editar aqui
