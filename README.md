@@ -1,53 +1,110 @@
 ```markdown
 # 🤖 Automação de WhatsApp com Python + Selenium
 
-Este projeto envia mensagens automáticas no WhatsApp Web usando Python.
+Automatize o envio de mensagens no WhatsApp Web utilizando **Python** e **Selenium**.  
+Ideal para interações automatizadas, testes ou como base para bots de atendimento.
+
+## 🛠 Tecnologias Utilizadas
+
+- Python 3.10+
+- Selenium WebDriver
+- Google Chrome
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+📦 whatsapp-bot
+├── 📄 requisitos.txt         # Dependências do projeto
+├── 📄 whatsapp_bot.py        # Código principal da automação
+└── 📄 README.md              # Documentação
+```
+
+---
+
+## 📦 Requisitos
+
+- [Python 3.10+](https://www.python.org/)
+- [Google Chrome instalado](https://www.google.com/chrome/)
+- [WebDriver do Chrome (compatível com sua versão)](https://sites.google.com/a/chromium.org/chromedriver/)
 
 ---
 
 ## 🚀 Como usar
 
-1. Instale as dependências:
+1. **Clone este repositório:**
+
+```bash
+git clone https://github.com/seu-usuario/whatsapp-bot.git
+cd whatsapp-bot
+```
+
+2. **Instale as dependências:**
 
 ```bash
 pip install -r requisitos.txt
 ```
 
-2. Edite o caminho do perfil do Chrome dentro do código:
+3. **Configure o caminho do seu perfil do Chrome:**
+
+No `whatsapp_bot.py`, edite a linha abaixo com o caminho do seu perfil local:
 
 ```python
 options.add_argument(r"--user-data-dir=C:\CAMINHO\DO\SEU\PERFIL")
 ```
 
-3. Edite o tempo de execução caso necessário:
-    tempo_espera = 40 if primeira_vez == "sim" else 10 
-    -> O primeiro número (no caso o 40) determina o tempo em segundos para a execução do comando se o usuário marcar "nao" como opção
-        - Esse tempo deve ser maior que o segundo, porque é necessário ter o tempo para o usuário escanear o Qr Code
-        - Ajuste para o seu caso e a velocidade da sua internet
-    -> O segundo número (10) determina o tempo em segundos para a execução do comando se o usuário marcar "sim" como opção
-        - Nessa caso o usuário já executou o código pela primeira vez e já está logado no whatsapp web
-        - Dessa forma pode ser um tempo mais curto.
-        - Ajuste para o seu caso e a velocidade da sua internet
-   observação: caso o tempo esteja incorreto o código apresentará erros e dessa forma mostrará ao usuário a necessidade de ajustar
-   
-4. Execute o script:
+> Isso mantém sua sessão salva e evita o escaneamento do QR Code em execuções futuras. 
+
+4. **Ajuste o tempo de espera (se necessário):**
+
+```python
+tempo_espera = 40 if primeira_vez == "sim" else 10
+```
+
+- `40 segundos`: para escanear o QR Code na **primeira execução**
+- `10 segundos`: para execuções futuras (usuário já logado)
+
+> Ajuste de acordo com a velocidade da sua internet e resposta do WhatsApp Web.
+
+5. **Execute o script:**
 
 ```bash
 python whatsapp_bot.py
 ```
 
-Siga as instruções no terminal para enviar a mensagem.
+Siga as instruções no terminal para enviar sua mensagem personalizada.
 
 ---
 
-## ⚠️ Aviso
+## ⚠️ Aviso Legal
 
-Este projeto é para fins **educacionais**. Evite usar para spam ou envios em massa sem consentimento.
+> Este projeto é destinado exclusivamente para fins **educacionais**.  
+> O uso indevido para **spam**, **marketing não autorizado** ou **mensagens em massa sem consentimento** é de inteira responsabilidade do usuário.
+
+---
+
+## 💼 Sobre mim
+
+Desenvolvedor Python focado em automações e soluções inteligentes para negócios.  
+Buscando oportunidades para aplicar minha paixão por tecnologia e entregar valor através da programação.
+
+📫 Entre em contato:
+
+- LinkedIn: www.linkedin.com/in/felipemalard
+- E-mail: felipemalard1@gmail.com
+
+---
+
+## 📝 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+## 💡 Precisa de algo personalizado?
+
+✅ Modifico esse código para sua necessidade  
+✅ Crio outras automações para sua empresa ou rotina  
+✅ Dou suporte para evolução do projeto
 ```
-
----
-
-Se quiser, também posso te ajudar a:
-
-✅ Modificar esse código para a sua necessidade
-✅ Criar outras automações para sua empresa
