@@ -27,10 +27,9 @@ Ideal para interações automatizadas, testes ou como base para bots de atendime
 
 1. **Clone este repositório:**
 
-```python
-git clone https://github.com/seu-usuario/whatsapp-bot.git
-cd whatsapp-bot
-```
+git clone https://github.com/felipemalard/automacao-whatsapp.git
+cd automacao-whatsapp
+
 
 2. **Instale as dependências:**
 
