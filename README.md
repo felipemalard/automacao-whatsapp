@@ -23,14 +23,6 @@ Ideal para interações automatizadas, testes ou como base para bots de atendime
 
 ---
 
-## 📦 Requisitos
-
-- [Python 3.10+](https://www.python.org/)
-- [Google Chrome instalado](https://www.google.com/chrome/)
-- [WebDriver do Chrome (compatível com sua versão)](https://sites.google.com/a/chromium.org/chromedriver/)
-
----
-
 ## 🚀 Como usar
 
 1. **Clone este repositório:**
