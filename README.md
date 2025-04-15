@@ -33,9 +33,8 @@ cd automacao-whatsapp
 
 2. **Instale as dependências:**
 
-```bash
 pip install -r requisitos.txt
-```
+
 
 3. **Configure o caminho do seu perfil do Chrome:**
 
