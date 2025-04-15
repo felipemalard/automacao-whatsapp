@@ -46,9 +46,7 @@ options.add_argument(r"--user-data-dir=C:\CAMINHO\DO\SEU\PERFIL")
 
 4. **Ajuste o tempo de espera (se necessário):**
 
-```python
 tempo_espera = 40 if primeira_vez == "sim" else 10
-```
 
 - `40 segundos`: para escanear o QR Code na **primeira execução**
 - `10 segundos`: para execuções futuras (usuário já logado)
@@ -57,9 +55,7 @@ tempo_espera = 40 if primeira_vez == "sim" else 10
 
 5. **Execute o script:**
 
-```bash
 python whatsapp_bot.py
-```
 
 Siga as instruções no terminal para enviar sua mensagem personalizada.
 
