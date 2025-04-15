@@ -19,7 +19,18 @@ pip install -r requisitos.txt
 options.add_argument(r"--user-data-dir=C:\CAMINHO\DO\SEU\PERFIL")
 ```
 
-3. Execute o script:
+3. Edite o tempo de execução caso necessário:
+    tempo_espera = 40 if primeira_vez == "sim" else 10 
+    -> O primeiro número (no caso o 40) determina o tempo em segundos para a execução do comando se o usuário marcar "nao" como opção
+        - Esse tempo deve ser maior que o segundo, porque é necessário ter o tempo para o usuário escanear o Qr Code
+        - Ajuste para o seu caso e a velocidade da sua internet
+    -> O segundo número (10) determina o tempo em segundos para a execução do comando se o usuário marcar "sim" como opção
+        - Nessa caso o usuário já executou o código pela primeira vez e já está logado no whatsapp web
+        - Dessa forma pode ser um tempo mais curto.
+        - Ajuste para o seu caso e a velocidade da sua internet
+   observação: caso o tempo esteja incorreto o código apresentará erros e dessa forma mostrará ao usuário a necessidade de ajustar
+   
+4. Execute o script:
 
 ```bash
 python whatsapp_bot.py
