@@ -27,7 +27,7 @@ Ideal para interações automatizadas, testes ou como base para bots de atendime
 
 1. **Clone este repositório:**
 
-```bash
+```python
 git clone https://github.com/seu-usuario/whatsapp-bot.git
 cd whatsapp-bot
 ```
