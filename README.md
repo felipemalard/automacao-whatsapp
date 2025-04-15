@@ -40,9 +40,7 @@ pip install -r requisitos.txt
 
 No `whatsapp_bot.py`, edite a linha abaixo com o caminho do seu perfil local:
 
-```python
 options.add_argument(r"--user-data-dir=C:\CAMINHO\DO\SEU\PERFIL")
-```
 
 > Isso mantém sua sessão salva e evita o escaneamento do QR Code em execuções futuras. 
 
