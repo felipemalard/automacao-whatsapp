@@ -4,6 +4,8 @@
 Automatize o envio de mensagens no WhatsApp Web utilizando **Python** e **Selenium**.  
 Ideal para interações automatizadas, testes ou como base para bots de atendimento.
 
+---
+
 ## 🛠 Tecnologias Utilizadas
 
 - Python 3.10+
@@ -16,9 +18,9 @@ Ideal para interações automatizadas, testes ou como base para bots de atendime
 
 ```
 📦 whatsapp-bot
-├── 📄 requisitos.txt         # Dependências do projeto
-├── 📄 whatsapp_bot.py        # Código principal da automação
-└── 📄 README.md              # Documentação
+├── 📄 requisitos.txt        # Dependências do projeto
+├── 📄 whatsapp_bot.py       # Código principal da automação
+└── 📄 README.md             # Documentação
 ```
 
 ---
@@ -27,26 +29,32 @@ Ideal para interações automatizadas, testes ou como base para bots de atendime
 
 1. **Clone este repositório:**
 
+```bash
 git clone https://github.com/felipemalard/automacao-whatsapp.git
 cd automacao-whatsapp
-
+```
 
 2. **Instale as dependências:**
 
+```bash
 pip install -r requisitos.txt
-
+```
 
 3. **Configure o caminho do seu perfil do Chrome:**
 
 No `whatsapp_bot.py`, edite a linha abaixo com o caminho do seu perfil local:
 
+```python
 options.add_argument(r"--user-data-dir=C:\CAMINHO\DO\SEU\PERFIL")
+```
 
 > Isso mantém sua sessão salva e evita o escaneamento do QR Code em execuções futuras. 
 
 4. **Ajuste o tempo de espera (se necessário):**
 
+```python
 tempo_espera = 40 if primeira_vez == "sim" else 10
+```
 
 - `40 segundos`: para escanear o QR Code na **primeira execução**
 - `10 segundos`: para execuções futuras (usuário já logado)
@@ -55,7 +63,9 @@ tempo_espera = 40 if primeira_vez == "sim" else 10
 
 5. **Execute o script:**
 
+```bash
 python whatsapp_bot.py
+```
 
 Siga as instruções no terminal para enviar sua mensagem personalizada.
 
@@ -73,7 +83,7 @@ Siga as instruções no terminal para enviar sua mensagem personalizada.
 Desenvolvedor Python focado em automações e soluções inteligentes para negócios.  
 Buscando oportunidades para aplicar minha paixão por tecnologia e entregar valor através da programação.
 
-📫 Entre em contato:
+📫 **Entre em contato:**
 
 - LinkedIn: www.linkedin.com/in/felipemalard
 - E-mail: felipemalard1@gmail.com
